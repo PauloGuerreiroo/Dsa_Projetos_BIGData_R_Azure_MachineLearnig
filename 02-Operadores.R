@@ -1,54 +1,66 @@
-#Apontar para diretÃ³rio de trabalho
-setwd("C:/Users/7700564656/Documents/DSA-CURSOS/FORMACAO-DATASCIENCE/BIGDATA_R_AzureMachineLearning")
+# Operadores Básicos, Relacionais e Lógicos em R
 
-#confirma diretÃ³rio de trabalho
+# Obs: Caso tenha problemas com a acentuação, consulte este link:
+# https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding
+
+# Configurando o diretório de trabalho
+# Coloque entre aspas o diretório de trabalho que você está usando no seu computador
+# Não use diretórios com espaço no nome
+setwd("C:/FCD/BigDataRAzure/Cap02")
 getwd()
 
-#Operadores Básicos
+# Operadores Básicos
 
-#Soma
-7+7
+# Soma
+7 + 7
 
-#Subtração
-7-7
+# Subtração
+7 - 4
 
-#Multiplicação
-7*7
+# Multiplicação
+5 * 5
 
-#Divisão
-7/7
+# Divisão
+6 / 6
 
-#Potencia
-7^2
-7**2
+# Potência
+3^2
+3**2
 
-#Módulo
-10%%3
+# Módulo
+16 %% 3 
 
-#Operadores Relacionais
 
-x=7
-y=5
+# Operadores Relacionais
 
-#Operadores
+# Atribuindo variáveis
+x = 7
+y = 5
 
-x>8
-x<8
-x<=8
-x>=8
-x==8
+# Operadores
+x > 8
+x < 8
+x <= 8
+x >= 8
+x == 8
+x != 8
 
-#Operadores lógicos
-#And
+
+# Operadores lógicos
+
+# And
 (x==8) & (x==6)
-(x==7) & (x==5)
-(x==8) & (x==5)
+(x==7) & (x>=5)
+(x==8) & (x==7)
 
-
-#OR
+# Or
 (x==8) | (x>5)
 (x==8) | (x>=5)
 
-#Not
-x>8
-print(!x=8)
+# Not
+x > 8
+print(!x > 8)
+
+
+
+

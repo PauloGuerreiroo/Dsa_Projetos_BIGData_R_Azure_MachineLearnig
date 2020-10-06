@@ -1,53 +1,69 @@
-#Apontar para diretÃ³rio de trabalho
-setwd("C:/Users/7700564656/Documents/DSA-CURSOS/FORMACAO-DATASCIENCE/BIGDATA_R_AzureMachineLearning")
+# Variáveis em R
 
-#confirma diretÃ³rio de trabalho
+# Obs: Caso tenha problemas com a acentuação, consulte este link:
+# https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding
+
+# Configurando o diretório de trabalho
+# Coloque entre aspas o diretório de trabalho que você está usando no seu computador
+# Não use diretórios com espaço no nome
+setwd("C:/FCD/BigDataRAzure/Cap02")
 getwd()
 
-#Criando Variaveis
+# Criando Variáveis
 var1 = 100
 var1
-#Verificar tipo da Variavel
 mode(var1)
-#verificar o que a função mode faz
 help("mode")
-#Raiz quadrada
 sqrt(var1)
 
-#Atribuindo o valor de uma variavel com o valor de outra variavel
-var2=1
+
+# Podemos atribuir o valor de uma variável a outra variável
+var2 = var1
 var2
 mode(var2)
-#Verifica o tipo da variavel
 typeof(var2)
+help("typeof")
 
 
-#uma variavel pode ser uma lista de elementos
-var3 = c("primeiro","segundo","terceiro")
+# Uma variável pode ser uma lista de elementos
+var3 = c("primeiro", "segundo", "terceiro")
 var3
 mode(var3)
 
-#uma variavel pode ser uma funcao
-var4 = function (x) (x+3)
-mode(var4)
-var4
 
-#podemos tambem mudar o modo do dado
-var5 =as.character(var1)
+# Uma variável pode ser uma função
+var4 = function(x) {x+3}
+var4
+mode(var4)
+
+
+# Podemos também mudar o modo do dado. 
+var5 = as.character(var1)
 var5
 mode(var5)
 
-#outra maneira de atribuir valor a uma variavel
+
+# Atribuindo valores a objetos
 x <- c(1,2,3)
 x
+x1 = c(1,2,3)
+x1
 c(1,2,3) -> y
 y
-assign("x", c(1,2,3))
+assign("x", c(6.3,4,-2))
+x
 
 
-#Verificando o valor em uma posição especifica
+# Verificando o valor em uma posição específica
 x[1]
 
-#verificar a lista
-ls(x)
-onjects()
+
+# Verificar objetos
+ls()
+objects()
+
+
+# Remover objetos
+rm(x)
+x
+

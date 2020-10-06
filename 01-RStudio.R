@@ -1,55 +1,70 @@
-#Primeiros Passos na linguagem
+# Primeiros Passos na Linguagem R
 
-#Apontar para diretório de trabalho
-setwd("C:/Users/7700564656/Documents/DSA-CURSOS/FORMACAO-DATASCIENCE/BIGDATA_R_AzureMachineLearning")
+# Obs: Caso tenha problemas com a acentuação, consulte este link:
+# https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding
 
-#confirma diretório de trabalho
+# Configurando o diretório de trabalho
+# Coloque entre aspas o diretório de trabalho que você está usando no seu computador
+# Não use diretórios com espaço no nome
+setwd("C:/FCD/BigDataRAzure/Cap02")
 getwd()
 
-#verificar a licença
+
+# Nome dos Contributors
+contributors()
+
+
+# Licença
 license()
 
-#Informações da sessão
+
+# Informações sobre a sessão
 sessionInfo()
 
-#mostrar dados na tela
-print("Hello world")
 
-#Criar gráficos
+# Imprimir na tela
+print('Estou iniciando minha caminhada na carreira de Cientista de Dados')
+
+
+# Criar gráficos
 plot(1:25)
 
 
-#instalar pacotes
-install.packages('caret')
+# Instalar pacotes
+install.packages('randomForest')
 install.packages('ggplot2')
 install.packages("dplyr")
 install.packages("devtools")
 
-#carregar pacote na memoria, para que ele possa ser utilizado
+
+# Carregar o pacote
 library(ggplot2)
 
-#Descarregar o pacote para que ele não fique alocando memoria
+
+# Descarregar o pacote
 detach(package:ggplot2)
 
-#se você quiser saber para que serve determinada função, é só usar o comando help
-help(mean)
 
-#para mais informações sobre funções, nós podemos instalar a biblioteca sos
+# Se souber o nome da função
+help(mean)
+?mean
+
+
+# Para buscar mais opções sobre uma função, use o pacote SOS
 install.packages("sos")
-#carregando a biblioteca
 library(sos)
-#após a instalação do pacote sos, podemos usar a função a baixo para pesquisar sobre outra função
 findFn("fread")
 
-#se não souber o nome da função, é possivel utilizar o comando
+
+# Se não souber o nome da função
 help.search('randomForest')
-#podemos utilizar ?? tbm
-#Podemos pesquisar sobre uma função no site
+help.search('matplot')
+??matplot
 RSiteSearch('matplot')
-#função para mostrar um exemplo da função
+example('matplot')
 
 
-#sair
+# Sair
 q()
 
 
